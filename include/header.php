@@ -35,4 +35,4 @@ include "include/function.php";
 			</div>
 		</nav>
 	</header>
-    <?php echo get_url();?>
+    
