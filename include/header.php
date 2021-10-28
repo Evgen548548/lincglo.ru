@@ -1,5 +1,9 @@
 <?php 
 include "include/function.php";
+
+$user_counte = db_query("SELECT COUNT(id) FROM `users`;")->fetchColumn();
+$yiewss_counte = db_query("SELECT SUM(`vives`) FROM `links`;")->fetchColumn();
+$link_counte = db_query("SELECT COUNT(id) FROM `links`;")->fetchColumn();
 ?> 
 <!doctype html>
 <html lang="ru">
@@ -35,4 +39,5 @@ include "include/function.php";
 			</div>
 		</nav>
 	</header>
+
     
